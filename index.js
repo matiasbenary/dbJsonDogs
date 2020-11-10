@@ -7,12 +7,14 @@ faker.locale = "es";
 let imgDog = [];
 
 const getImgDog = async () => {
-  let res = await axios.get("https://dog.ceo/api/breeds/image/random/10");
+  const candDogs = 20;  
+  const res = await axios.get("https://dog.ceo/api/breeds/image/random/"+candDogs);
   imgDog = res.data.message;
 };
 
 const saveFile = (json) => {
-  const data = JSON.stringify(json, null,  " ");
+  // mode debug const data = JSON.stringify(json, null,  " ");
+  const data = JSON.stringify(json);
   fs.writeFileSync("db.json", data);
 };
 
@@ -33,7 +35,7 @@ const init = async () => {
   const length = db.dogs.length;
 
   for (let dogId = 1; dogId <= length; dogId++) {
-    const cantCommentaries = Math.random() * 3 + 2 ;
+    const cantCommentaries = Math.random() * 4 + 1 ;
     for (let indice = 1; indice <= cantCommentaries; indice++) {
       db.comments.push({
         dogId,
