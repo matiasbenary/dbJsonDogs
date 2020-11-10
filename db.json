@@ -1,14 +1,244 @@
 {
-    "posts": [
-      { "id": 1, "title": "Post 1" },
-      { "id": 2, "title": "Post 2" },
-      { "id": 3, "title": "Post 3" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 },
-      { "id": 2, "body": "some comment", "postId": 1 }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
+ "dogs": [
+  {
+   "id": 1,
+   "img": "https://images.dog.ceo/breeds/corgi-cardigan/n02113186_741.jpg",
+   "name": "Gonzalo",
+   "email": "Leonor.Trejo@gmail.com",
+   "like": 29149
+  },
+  {
+   "id": 2,
+   "img": "https://images.dog.ceo/breeds/spaniel-brittany/n02101388_3536.jpg",
+   "name": "Cristóbal",
+   "email": "JuanCarlos9@gmail.com",
+   "like": 622
+  },
+  {
+   "id": 3,
+   "img": "https://images.dog.ceo/breeds/frise-bichon/2.jpg",
+   "name": "Marilú",
+   "email": "Rosario.Gastlum59@yahoo.com",
+   "like": 58648
+  },
+  {
+   "id": 4,
+   "img": "https://images.dog.ceo/breeds/husky/n02110185_14283.jpg",
+   "name": "Julia",
+   "email": "Vctor67@yahoo.com",
+   "like": 2156
+  },
+  {
+   "id": 5,
+   "img": "https://images.dog.ceo/breeds/hound-plott/hhh-23456.jpeg",
+   "name": "Rodrigo",
+   "email": "AnaLuisa32@hotmail.com",
+   "like": 45575
+  },
+  {
+   "id": 6,
+   "img": "https://images.dog.ceo/breeds/spaniel-blenheim/n02086646_127.jpg",
+   "name": "Gloria",
+   "email": "Ins87@hotmail.com",
+   "like": 90558
+  },
+  {
+   "id": 7,
+   "img": "https://images.dog.ceo/breeds/dingo/n02115641_1228.jpg",
+   "name": "Nicolás",
+   "email": "Amalia_Matas@hotmail.com",
+   "like": 9502
+  },
+  {
+   "id": 8,
+   "img": "https://images.dog.ceo/breeds/waterdog-spanish/20180723_185559.jpg",
+   "name": "Gregorio",
+   "email": "Francisca89@yahoo.com",
+   "like": 1008
+  },
+  {
+   "id": 9,
+   "img": "https://images.dog.ceo/breeds/terrier-kerryblue/n02093859_2320.jpg",
+   "name": "Clara",
+   "email": "Benito_Saavedra@gmail.com",
+   "like": 96737
+  },
+  {
+   "id": 10,
+   "img": "https://images.dog.ceo/breeds/puggle/IMG_114654.jpg",
+   "name": "Antonia",
+   "email": "Isabela.Delro71@gmail.com",
+   "like": 8860
+  }
+ ],
+ "comments": [
+  {
+   "dogId": 1,
+   "id": 1,
+   "commentary": "Repellat fuga voluptas alias repudiandae fugiat accusantium iste quas.",
+   "user": "Ricardo74"
+  },
+  {
+   "dogId": 1,
+   "id": 2,
+   "commentary": "Ut iste autem labore est nemo magnam officia doloribus.",
+   "user": "Enrique.Zelaya"
+  },
+  {
+   "dogId": 1,
+   "id": 3,
+   "commentary": "Doloremque reprehenderit et facilis sint ut.",
+   "user": "Victoria_Mata"
+  },
+  {
+   "dogId": 2,
+   "id": 1,
+   "commentary": "Et reiciendis dolorum eos tempore minus tempore.",
+   "user": "Dolores_Chavarría1"
+  },
+  {
+   "dogId": 2,
+   "id": 2,
+   "commentary": "Cum eos sunt.",
+   "user": "Marilú.Quiróz46"
+  },
+  {
+   "dogId": 2,
+   "id": 3,
+   "commentary": "Excepturi sit quia omnis rerum.",
+   "user": "Lucas.Cruz"
+  },
+  {
+   "dogId": 3,
+   "id": 1,
+   "commentary": "Minima soluta sint molestiae fugiat praesentium.",
+   "user": "José.López"
+  },
+  {
+   "dogId": 3,
+   "id": 2,
+   "commentary": "Tempore ratione voluptates qui.",
+   "user": "Javier89"
+  },
+  {
+   "dogId": 3,
+   "id": 3,
+   "commentary": "Voluptate mollitia perspiciatis quam repellendus necessitatibus quasi quaerat aspernatur laboriosam.",
+   "user": "AnaLuisa4"
+  },
+  {
+   "dogId": 4,
+   "id": 1,
+   "commentary": "Velit dolores blanditiis non totam autem quam et possimus aut.",
+   "user": "Juan.Delatorre"
+  },
+  {
+   "dogId": 4,
+   "id": 2,
+   "commentary": "Earum sapiente aut porro praesentium odio reprehenderit occaecati.",
+   "user": "Marcela_Olvera60"
+  },
+  {
+   "dogId": 5,
+   "id": 1,
+   "commentary": "Et ipsam qui libero illum nesciunt magni ad nam.",
+   "user": "Carlota25"
+  },
+  {
+   "dogId": 5,
+   "id": 2,
+   "commentary": "Autem culpa ad ratione non odio.",
+   "user": "Timoteo_Dávila"
+  },
+  {
+   "dogId": 6,
+   "id": 1,
+   "commentary": "Illum sit eum quis.",
+   "user": "Estela29"
+  },
+  {
+   "dogId": 6,
+   "id": 2,
+   "commentary": "Iure eligendi fuga assumenda velit.",
+   "user": "Ana87"
+  },
+  {
+   "dogId": 6,
+   "id": 3,
+   "commentary": "Quasi porro quaerat possimus sit aut.",
+   "user": "Felipe.Marín"
+  },
+  {
+   "dogId": 6,
+   "id": 4,
+   "commentary": "Nemo quidem sint sunt eius repellat.",
+   "user": "Francisca.Aguayo99"
+  },
+  {
+   "dogId": 7,
+   "id": 1,
+   "commentary": "Corporis minus illum quia est deserunt porro aliquam.",
+   "user": "JorgeLuis_Ulibarri"
+  },
+  {
+   "dogId": 7,
+   "id": 2,
+   "commentary": "Corporis eligendi sit enim numquam eos ratione.",
+   "user": "LuisMiguel26"
+  },
+  {
+   "dogId": 7,
+   "id": 3,
+   "commentary": "Ullam voluptas corporis dolore quo nesciunt.",
+   "user": "Micaela_Gastélum43"
+  },
+  {
+   "dogId": 8,
+   "id": 1,
+   "commentary": "Odio illum ratione.",
+   "user": "Gilberto.Araña92"
+  },
+  {
+   "dogId": 8,
+   "id": 2,
+   "commentary": "Et et laborum.",
+   "user": "Leonor_Lozano"
+  },
+  {
+   "dogId": 8,
+   "id": 3,
+   "commentary": "Sed deleniti sint nemo debitis iste voluptas assumenda non.",
+   "user": "Óscar10"
+  },
+  {
+   "dogId": 9,
+   "id": 1,
+   "commentary": "Quia voluptate sint blanditiis quos.",
+   "user": "Micaela69"
+  },
+  {
+   "dogId": 9,
+   "id": 2,
+   "commentary": "Ducimus dignissimos fugiat aspernatur omnis quis.",
+   "user": "MaríaTeresa_Benavídez87"
+  },
+  {
+   "dogId": 10,
+   "id": 1,
+   "commentary": "Ullam est minus.",
+   "user": "Alejandro_Carbajal"
+  },
+  {
+   "dogId": 10,
+   "id": 2,
+   "commentary": "At perferendis vel et dignissimos itaque nulla optio voluptatem.",
+   "user": "Lucas25"
+  },
+  {
+   "dogId": 10,
+   "id": 3,
+   "commentary": "Vero iste sed occaecati sed veniam rerum.",
+   "user": "Adela.Medrano"
+  }
+ ]
 }
