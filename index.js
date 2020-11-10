@@ -7,7 +7,7 @@ faker.locale = "es";
 let imgDog = [];
 
 const getImgDog = async () => {
-  let res = await axios.get("https://dog.ceo/api/breeds/image/random/25");
+  let res = await axios.get("https://dog.ceo/api/breeds/image/random/10");
   imgDog = res.data.message;
 };
 
@@ -32,11 +32,11 @@ const init = async () => {
 
   const length = db.dogs.length;
 
-  for (let Dogid = 1; Dogid <= length; Dogid++) {
+  for (let dogId = 1; dogId <= length; dogId++) {
     const cantCommentaries = Math.random() * 3 + 2 ;
     for (let indice = 1; indice <= cantCommentaries; indice++) {
       db.comments.push({
-        Dogid,
+        dogId,
         id: indice,
         commentary: faker.lorem.sentence(),
         user: faker.internet.userName(),
