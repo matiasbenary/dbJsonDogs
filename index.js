@@ -11,8 +11,10 @@ http://my-json-server.typicode.com/pricing
 */
 
 const getImgDog = async () => {
-  const candDogs = 15;  
-  const res = await axios.get("https://dog.ceo/api/breeds/image/random/"+candDogs);
+  const candDogs = 15;
+  const res = await axios.get(
+    "https://dog.ceo/api/breeds/image/random/" + candDogs
+  );
   imgDog = res.data.message;
 };
 
@@ -39,13 +41,14 @@ const init = async () => {
   const length = db.dogs.length;
 
   for (let dogId = 1; dogId <= length; dogId++) {
-    const cantCommentaries = Math.random() * 2 + 1 ;
+    const cantCommentaries = Math.random() * 3 + 1;
     for (let indice = 1; indice <= cantCommentaries; indice++) {
       db.comments.push({
         dogId,
         id: indice,
         commentary: faker.lorem.sentence(),
         user: faker.internet.userName(),
+        avatar: faker.internet.avatar(),
       });
     }
   }
